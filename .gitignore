@@ -1,0 +1,59 @@
+# ============================================================
+# OpenRouteService Local - .gitignore
+# ============================================================
+
+# -------------------- Archivos de mapa (.pbf) --------------------
+# Los archivos PBF son muy pesados (cientos de MB / varios GB).
+# Deben descargarse manualmente desde Geofabrik.
+*.osm.pbf
+*.pbf
+
+# -------------------- Caché de elevación --------------------
+# Generados automáticamente por ORS al construir los grafos.
+# Pueden pesar varios GB en total.
+ors-docker/elevation_cache/*
+!ors-docker/elevation_cache/.gitkeep
+
+# -------------------- Grafos compilados --------------------
+# Generados por ORS a partir del archivo PBF + datos de elevación.
+ors-docker/graphs/*
+!ors-docker/graphs/.gitkeep
+
+# -------------------- Logs --------------------
+ors-docker/logs/*
+!ors-docker/logs/.gitkeep
+
+# -------------------- Archivos de ejemplo --------------------
+# El PBF de ejemplo de Heidelberg también se excluye por su tamaño.
+ors-docker/files/example-*.pbf
+
+# -------------------- Docker --------------------
+.docker/
+
+# -------------------- Sistema operativo --------------------
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux
+*~
+.nfs*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# -------------------- IDEs y editores --------------------
+.idea/
+.vscode/
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+
+# -------------------- Otros --------------------
+*.log
+*.tmp
+*.bak
