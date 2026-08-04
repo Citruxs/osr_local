@@ -1,0 +1,3 @@
+# Este directorio almacena los grafos compilados por OpenRouteService.
+# Se genera automáticamente al iniciar el contenedor con REBUILD_GRAPHS=true.
+# No se versiona en Git (ver .gitignore).

@@ -1,0 +1,3 @@
+# Este directorio almacena el caché de datos de elevación (SRTM / GMTED).
+# Se genera automáticamente al construir los grafos.
+# No se versiona en Git (ver .gitignore).
